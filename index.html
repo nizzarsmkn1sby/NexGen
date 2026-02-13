@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NexGen Digital | Premium IT & Digital Agency</title>
-    <meta name="description" content="NexGen Digital is a modern IT and Digital agency providing premium solutions for software development, digital marketing, and cloud scaling.">
+    <title>NexGen Digital | Agensi Digital & IT Premium Indonesia</title>
+    <meta name="description" content="NexGen Digital adalah agensi IT dan Digital modern yang menyediakan solusi premium untuk pengembangan perangkat lunak, pemasaran digital, dan skalabilitas cloud di Indonesia.">
     <link rel="stylesheet" href="style.css">
     <!-- Lucide Icons for high quality icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -19,15 +22,19 @@
                     <i data-lucide="zap" style="color: var(--color-accent-blue);"></i>
                     Nex<span>Gen</span>
                 </div>
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#pricing">Pricing</a></li>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#services">Layanan</a></li>
+                    <li><a href="#portfolio">Portofolio</a></li>
+                    <li><a href="#pricing">Harga</a></li>
+                    <li class="mobile-only"><a href="#payment" class="btn btn-primary">Mulai Proyek</a></li>
                 </ul>
                 <div class="nav-cta">
-                    <a href="#payment" class="btn btn-primary">Start Project</a>
+                    <a href="#payment" class="btn btn-primary">Mulai Proyek</a>
                 </div>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+                    <i data-lucide="menu"></i>
+                </button>
             </nav>
         </div>
     </header>
@@ -38,24 +45,24 @@
             <div class="container">
                 <div class="hero-row">
                     <div class="hero-content">
-                        <span class="section-tag">Digital Innovation</span>
-                        <h1>Human-Centric Digital Experiences.</h1>
-                        <p>We combine strategic design with cutting-edge technology to build digital products that drive impact and scale your vision.</p>
+                        <span class="section-tag">Inovasi Digital</span>
+                        <h1>Pengalaman Digital Berbasis Manusia.</h1>
+                        <p>Kami menggabungkan desain strategis dengan teknologi mutakhir untuk membangun produk digital yang memberikan dampak dan memperbesar visi bisnis Anda.</p>
                         <div class="hero-btns">
-                            <a href="#services" class="btn btn-primary">Our Solutions</a>
-                            <a href="#portfolio" class="btn btn-outline">View Portfolio</a>
+                            <a href="#services" class="btn btn-primary">Solusi Kami</a>
+                            <a href="#portfolio" class="btn btn-outline">Lihat Portofolio</a>
                         </div>
                     </div>
                     <div class="hero-image">
-                        <div class="hero-img-placeholder" style="background: none; padding: 0;">
-                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop" alt="Digital Agency" style="width: 100%; height: 100%; object-fit: cover; border-radius: 30px;">
-                            <div style="position: absolute; bottom: 20px; left: 20px; right: 20px; background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); padding: 1.5rem; border-radius: 12px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); display: flex; align-items: center; gap: 1rem;">
-                                <div style="width: 40px; height: 40px; background: var(--color-gray-light); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                                    <i data-lucide="activity" style="width: 20px; color: var(--color-accent-blue);"></i>
+                        <div class="hero-img-container">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop" alt="Digital Agency Indonesia" class="hero-main-img">
+                            <div class="hero-stat-card">
+                                <div class="stat-icon">
+                                    <i data-lucide="activity"></i>
                                 </div>
                                 <div>
-                                    <div style="font-weight: 700; font-size: 0.9rem;">+142% Growth</div>
-                                    <div style="font-size: 0.7rem; color: var(--color-text-gray);">Average client ROI in 2025</div>
+                                    <div class="stat-value">+142% Pertumbuhan</div>
+                                    <div class="stat-label">Rata-rata ROI klien di 2025</div>
                                 </div>
                             </div>
                         </div>
@@ -68,40 +75,40 @@
         <section id="services" class="section-bg reveal">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-tag">Services</span>
-                    <h2>Expertise Built for the Future</h2>
-                    <p>Unlock your brand's potential with our multidisciplinary team of designers, engineers, and strategists.</p>
+                    <span class="section-tag">Layanan Kami</span>
+                    <h2>Keahlian yang Dibangun untuk Masa Depan</h2>
+                    <p>Buka potensi merek Anda dengan tim multidisiplin desainer, insinyur, dan strategiwan kami yang berbasis di Jakarta.</p>
                 </div>
                 <div class="services-grid">
                     <div class="service-card">
                         <div class="service-icon"><i data-lucide="layout"></i></div>
-                        <h3>UI/UX Design</h3>
-                        <p>Beautiful, intuitive interfaces designed for maximum user engagement and accessibility.</p>
+                        <h3>Desain UI/UX</h3>
+                        <p>Antarmuka yang indah dan intuitif, dirancang untuk keterlibatan pengguna dan aksesibilitas maksimal.</p>
                     </div>
                     <div class="service-card">
                         <div class="service-icon"><i data-lucide="terminal"></i></div>
-                        <h3>Development</h3>
-                        <p>High-performant web and mobile applications built with scalable and maintainable codebases.</p>
+                        <h3>Pengembangan Web</h3>
+                        <p>Aplikasi web dan mobile performa tinggi yang dibangun dengan kode yang skalabel dan mudah dipelihara.</p>
                     </div>
                     <div class="service-card">
                         <div class="service-icon"><i data-lucide="trending-up"></i></div>
-                        <h3>Digital Strategy</h3>
-                        <p>Data-driven marketing and SEO strategies to ensure your product reaches the right audience.</p>
+                        <h3>Strategi Digital</h3>
+                        <p>Pemasaran berbasis data dan strategi SEO untuk memastikan produk Anda menjangkau audiens yang tepat.</p>
                     </div>
                     <div class="service-card">
                         <div class="service-icon"><i data-lucide="server"></i></div>
-                        <h3>Cloud & Devops</h3>
-                        <p>Secure, reliable infrastructure automation to keep your business running smoothly 24/7.</p>
+                        <h3>Cloud & DevOps</h3>
+                        <p>Otomatisasi infrastruktur yang aman dan andal untuk menjaga bisnis Anda tetap berjalan 24/7.</p>
                     </div>
                     <div class="service-card">
                         <div class="service-icon"><i data-lucide="search"></i></div>
-                        <h3>Strategic SEO</h3>
-                        <p>Dominate search results with our technical and content-focused SEO optimization audits.</p>
+                        <h3>SEO Strategis</h3>
+                        <p>Dominasi hasil pencarian dengan audit optimasi SEO teknis dan fokus pada konten yang kami buat.</p>
                     </div>
                     <div class="service-card">
                         <div class="service-icon"><i data-lucide="message-square"></i></div>
-                        <h3>Product Consulting</h3>
-                        <p>From MVP to enterprise solutions, we provide the roadmap for your digital success.</p>
+                        <h3>Konsultasi Produk</h3>
+                        <p>Dari MVP hingga solusi enterprise, kami menyediakan peta jalan untuk kesuksesan digital Anda.</p>
                     </div>
                 </div>
             </div>
@@ -111,23 +118,23 @@
         <section id="portfolio" class="reveal">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-tag">Case Studies</span>
-                    <h2>Crafting Quality Results</h2>
-                    <p>We pride ourselves on delivering projects that are not only visual masterpieces but also functional powerhouses.</p>
+                    <span class="section-tag">Studi Kasus</span>
+                    <h2>Menghasilkan Kualitas Nyata</h2>
+                    <p>Kami bangga memberikan proyek yang tidak hanya merupakan mahakarya visual tetapi juga pembangkit tenaga fungsional.</p>
                 </div>
                 <div class="portfolio-grid">
                     <div class="portfolio-item">
                         <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=1200&auto=format&fit=crop" alt="FinTech Dashboard" class="portfolio-img">
                         <div class="portfolio-overlay">
                             <h3>Lumina Finance</h3>
-                            <p>Global payment gateway infrastructure and design.</p>
+                            <p>Infrastruktur dan desain gerbang pembayaran global.</p>
                         </div>
                     </div>
                     <div class="portfolio-item">
                         <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=1200&auto=format&fit=crop" alt="E-Commerce Project" class="portfolio-img">
                         <div class="portfolio-overlay">
                             <h3>Aura Boutique</h3>
-                            <p>Next-gen shopping experience with AR integration.</p>
+                            <p>Pengalaman belanja generasi baru dengan integrasi AR.</p>
                         </div>
                     </div>
                 </div>
@@ -138,44 +145,44 @@
         <section id="pricing" class="section-bg reveal">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-tag">Invest in Quality</span>
-                    <h2>Transparent Pricing</h2>
-                    <p>No hidden fees. Just high-quality digital deliverables built to scale with your business.</p>
+                    <span class="section-tag">Investasi Kualitas</span>
+                    <h2>Harga Transparan</h2>
+                    <p>Tanpa biaya tersembunyi. Hanya hasil digital berkualitas tinggi yang dibangun untuk berkembang bersama bisnis Anda.</p>
                 </div>
                 <div class="pricing-grid">
                     <div class="pricing-card">
                         <h3>Foundation</h3>
-                        <div class="price">$2,500<span>/min</span></div>
+                        <div class="price">IDR 15jt<span>/mulai</span></div>
                         <ul class="pricing-features">
-                            <li>Brand Identity Design</li>
-                            <li>Standard 5-Page Web</li>
-                            <li>Basic SEO Setup</li>
-                            <li>Monthly Maintenance</li>
+                            <li>Desain Identitas Merek</li>
+                            <li>Web Standar 5 Halaman</li>
+                            <li>Setup SEO Dasar</li>
+                            <li>Pemeliharaan Bulanan</li>
                         </ul>
-                        <a href="#payment" class="btn btn-outline">Start Here</a>
+                        <a href="#payment" class="btn btn-outline">Mulai Sekarang</a>
                     </div>
                     <div class="pricing-card featured">
-                        <div style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: var(--color-accent-blue); color: white; padding: 6px 24px; border-radius: 30px; font-size: 0.75rem; font-weight: 800; letter-spacing: 1px;">RECOMMENDED</div>
+                        <div class="recommended-tag">REKOMENDASI</div>
                         <h3>Professional</h3>
-                        <div class="price">$5,800<span>/min</span></div>
+                        <div class="price">IDR 35jt<span>/mulai</span></div>
                         <ul class="pricing-features">
-                            <li>Custom Web Application</li>
-                            <li>E-Commerce Capability</li>
-                            <li>Premium UI/UX Design</li>
-                            <li>Dedicated Support</li>
+                            <li>Aplikasi Web Kustom</li>
+                            <li>Kapabilitas E-Commerce</li>
+                            <li>Desain UI/UX Premium</li>
+                            <li>Dukungan Prioritas</li>
                         </ul>
-                        <a href="#payment" class="btn btn-primary">Book Now</a>
+                        <a href="#payment" class="btn btn-primary">Pesan Sekarang</a>
                     </div>
                     <div class="pricing-card">
                         <h3>Enterprise</h3>
-                        <div class="price">Custom<span>/tier</span></div>
+                        <div class="price">Kustom<span>/tier</span></div>
                         <ul class="pricing-features">
-                            <li>Full Stack Development</li>
-                            <li>Global Infrastructure</li>
-                            <li>24/7 DevOps Support</li>
-                            <li>Quarterly Strategy</li>
+                            <li>Pengembangan Full Stack</li>
+                            <li>Infrastruktur Global</li>
+                            <li>Dukungan DevOps 24/7</li>
+                            <li>Strategi Kuartalan</li>
                         </ul>
-                        <a href="#payment" class="btn btn-outline">Let's Talk</a>
+                        <a href="#payment" class="btn btn-outline">Konsultasi</a>
                     </div>
                 </div>
             </div>
@@ -186,50 +193,50 @@
             <div class="container">
                 <div class="section-header">
                     <span class="section-tag">Checkout</span>
-                    <h2>Ready to Scale?</h2>
-                    <p>Complete your booking details and our team will reach out within 24 hours.</p>
+                    <h2>Siap untuk Berkembang?</h2>
+                    <p>Lengkapi detail pemesanan Anda dan tim kami akan menghubungi dalam waktu 24 jam.</p>
                 </div>
                 
                 <div class="payment-section-container">
                     <div class="order-summary">
-                        <h3>Order Summary</h3>
-                        <div style="margin: 2rem 0; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--color-gray-light); padding-bottom: 1.5rem;">
+                        <h3>Ringkasan Pesanan</h3>
+                        <div class="summary-item main">
                             <div>
-                                <h4 style="margin: 0; font-size: 1.1rem;">Professional Package</h4>
-                                <small style="color: var(--color-text-gray);">Digital Transformation</small>
+                                <h4>Paket Professional</h4>
+                                <small>Transformasi Digital</small>
                             </div>
-                            <div style="font-weight: 700; font-size: 1.1rem;">$5,800.00</div>
+                            <div class="item-price">IDR 35.000.000</div>
                         </div>
-                        <div style="margin: 1.5rem 0; display: flex; justify-content: space-between; color: var(--color-text-gray);">
-                            <span>Onboarding Fee</span>
-                            <span>Included</span>
+                        <div class="summary-item">
+                            <span>Biaya Onboarding</span>
+                            <span>Termasuk</span>
                         </div>
-                        <div style="margin: 1.5rem 0; display: flex; justify-content: space-between; color: var(--color-text-gray);">
-                            <span>Taxes</span>
-                            <span>$0.00</span>
+                        <div class="summary-item">
+                            <span>Pajak (PPN 11%)</span>
+                            <span>IDR 3.850.000</span>
                         </div>
-                        <div style="margin: 2rem 0; display: flex; justify-content: space-between; font-size: 1.4rem; font-weight: 800; border-top: 2px solid var(--color-text-black); padding-top: 1rem;">
-                            <span>Total Due</span>
-                            <span>$5,800.00</span>
+                        <div class="total-due">
+                            <span>Total Tagihan</span>
+                            <span>IDR 38.850.000</span>
                         </div>
                     </div>
                     
                     <div class="payment-form">
-                        <h3>Secure Payment</h3>
+                        <h3>Pembayaran Aman</h3>
                         <div class="input-group">
-                            <label>Full Name</label>
-                            <input type="text" placeholder="e.g. Alexander Graham">
+                            <label>Nama Lengkap</label>
+                            <input type="text" placeholder="Contoh: Budi Santoso">
                         </div>
                         <div class="input-group">
-                            <label>Card Details</label>
-                            <div style="position: relative;">
-                                <input type="text" placeholder="4444 4444 4444 4444" style="padding-left: 3rem;">
-                                <i data-lucide="credit-card" style="position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); width: 18px; color: var(--color-text-gray);"></i>
+                            <label>Detail Kartu / Transfer</label>
+                            <div class="input-with-icon">
+                                <input type="text" placeholder="4444 4444 4444 4444">
+                                <i data-lucide="credit-card"></i>
                             </div>
                         </div>
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                        <div class="input-row">
                             <div class="input-group">
-                                <label>Expiry</label>
+                                <label>Kadaluarsa</label>
                                 <input type="text" placeholder="MM / YY">
                             </div>
                             <div class="input-group">
@@ -237,10 +244,10 @@
                                 <input type="text" placeholder="123">
                             </div>
                         </div>
-                        <button class="btn btn-primary" style="width: 100%; margin-top: 1rem; padding: 1.2rem; font-size: 1rem;">Pay $5,800.00 Securely</button>
-                        <div style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin-top: 1.5rem; color: var(--color-text-gray); font-size: 0.75rem;">
-                            <i data-lucide="shield-check" style="width: 14px;"></i>
-                            Data encrypted with 256-bit SSL security
+                        <button class="btn btn-primary btn-block">Bayar IDR 38.850.000 Sekarang</button>
+                        <div class="payment-footer">
+                            <i data-lucide="shield-check"></i>
+                            Data dienkripsi dengan keamanan SSL 256-bit
                         </div>
                     </div>
                 </div>
@@ -250,44 +257,44 @@
 
     <footer>
         <div class="container">
-            <div style="display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 4rem; margin-bottom: 60px;">
+            <div class="footer-grid">
                 <div class="footer-brand">
-                    <div class="logo" style="margin-bottom: 1.5rem;">
+                    <div class="logo">
                         <i data-lucide="zap" style="color: var(--color-accent-blue);"></i>
                         Nex<span>Gen</span>
                     </div>
-                    <p style="max-width: 300px;">Building the future of digital interaction through premium design and engineering excellence.</p>
+                    <p>Membangun masa depan interaksi digital melalui desain premium dan keunggulan teknik. Berbasis di Indonesia untuk dunia.</p>
                 </div>
-                <div>
-                    <h4 style="margin-bottom: 1.5rem;">Studio</h4>
-                    <ul style="color: var(--color-text-gray); gap: 0.8rem; display: flex; flex-direction: column; font-size: 0.95rem;">
-                        <li><a href="#home">About</a></li>
-                        <li><a href="#services">Careers</a></li>
-                        <li><a href="#portfolio">Our Work</a></li>
-                        <li><a href="#pricing">Contact</a></li>
+                <div class="footer-links">
+                    <h4>Studio</h4>
+                    <ul>
+                        <li><a href="#home">Tentang</a></li>
+                        <li><a href="#services">Karir</a></li>
+                        <li><a href="#portfolio">Karya Kami</a></li>
+                        <li><a href="#pricing">Kontak</a></li>
                     </ul>
                 </div>
-                <div>
-                    <h4 style="margin-bottom: 1.5rem;">Services</h4>
-                    <ul style="color: var(--color-text-gray); gap: 0.8rem; display: flex; flex-direction: column; font-size: 0.95rem;">
-                        <li>Development</li>
-                        <li>UI/UX Design</li>
-                        <li>Branding</li>
-                        <li>Growth</li>
+                <div class="footer-links">
+                    <h4>Layanan</h4>
+                    <ul>
+                        <li><a href="#">Pengembangan Web</a></li>
+                        <li><a href="#">Desain UI/UX</a></li>
+                        <li><a href="#">Branding</a></li>
+                        <li><a href="#">Pertumbuhan</a></li>
                     </ul>
                 </div>
-                <div>
-                    <h4 style="margin-bottom: 1.5rem;">Connect</h4>
-                    <ul style="color: var(--color-text-gray); gap: 0.8rem; display: flex; flex-direction: column; font-size: 0.95rem;">
-                        <li>Twitter</li>
-                        <li>LinkedIn</li>
-                        <li>Instagram</li>
-                        <li>Dribbble</li>
+                <div class="footer-links">
+                    <h4>Hubungi Kami</h4>
+                    <ul>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Dribbble</a></li>
                     </ul>
                 </div>
             </div>
-            <div style="text-align: center; padding-top: 40px; border-top: 1px solid var(--color-gray-light); color: var(--color-text-gray); font-size: 0.9rem;">
-                <p>&copy; 2026 NexGen Digital. Handcrafted for excellence.</p>
+            <div class="footer-bottom">
+                <p>&copy; 2026 NexGen Digital Indonesia. Dibuat dengan dedikasi tinggi.</p>
             </div>
         </div>
     </footer>
@@ -295,6 +302,30 @@
     <script>
         // Initialize Lucide Icons
         lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+        
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            const icon = menuToggle.querySelector('i');
+            if (navLinks.classList.contains('active')) {
+                icon.setAttribute('data-lucide', 'x');
+            } else {
+                icon.setAttribute('data-lucide', 'menu');
+            }
+            lucide.createIcons();
+        });
+
+        // Close menu when link is clicked
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                menuToggle.querySelector('i').setAttribute('data-lucide', 'menu');
+                lucide.createIcons();
+            });
+        });
 
         // Header Scroll Effect
         window.addEventListener('scroll', function() {
